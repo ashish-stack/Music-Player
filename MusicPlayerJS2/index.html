@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" type="text/css" href="musicplayer.css">
+    <script src="https://kit.fontawesome.com/fa58ad9657.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="headersection">
+        <h2 id="titleMusic">Music Player</h2>
+
+        <!-- Rounded switch -->
+        <label class="switch">
+            <input type="checkbox" id="toggleBackground" >
+            <span class="slider round"></span>
+        </label>
+    </section>
+
+    <section class="songsSection">
+        <div class="toggleColor" id="songslist">
+            <label for="songs">Filter by Genre:</label>
+            <select id="songs" name="musicgenre" onchange="showSongs()">
+                <option value="All" selected>All</option>
+                <option value="Romantic">Romantic</option>
+                <option value="Rap">Rap</option>
+            </select>
+
+            <h1 class="margin-class">All Songs</h1>
+
+            <ul class="margin-class" id="musiclists" class="styleNone">
+
+            </ul>
+        </div>
+
+        <div class="toggleColor" id="card">
+            <div id="cardsong">
+                <img src="https://a10.gaanacdn.com/gn_img/albums/jBr3gLyWR1/Br3gqvyYbR/size_l.webp" alt="Artist Picture" id="artistimage">
+                <h2 id="songname">Tum Dil ki Dhadkan mein</h2>
+                <h4 id="artistname" style="padding-bottom: 20px;">Abhijeet Bhatacharya</h4>
+            </div>
+            <audio src="" controls style="margin: 20px 20%;"></audio>
+            <div id="buttoncontrols">
+                <span> 
+                    <button id="previousBtn"><i class="fa-solid fa-angles-left"></i></button>
+                    <button id="nextBtn"><i class="fa-solid fa-angles-right"></i></button><br>
+                    <button style="margin: 20px 45%;" id="addplaylist">Add to Playlist</button>
+                </span>
+            </div>
+        </div>
+
+        <div id="displaylist">
+            <input type="text" placeholder="Enter Playlist Name" value="" id="playlistname">
+            <button id="createplaylist">Create Playlist</button>
+           
+            <div class="toggleColor" >
+                <ul id="songscurrent"></ul>
+                <h2>Current Playlist</h2>
+
+                <ul id="allplaylist" class="styleNone"></ul>
+                <h2>All Playlist</h2>
+            </div>
+        </div>
+        
+    </section>
+    <script src="musicJs.js"></script>
+</body>
+</html>

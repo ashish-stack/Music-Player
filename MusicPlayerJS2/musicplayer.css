@@ -1,0 +1,160 @@
+body{
+    background-color: rgb(200, 203, 205);
+}
+
+.headersection{
+    display: flex;
+}
+
+#titleMusic{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    margin: auto;
+    padding: 80px 0px;
+    text-align: center;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 34px;
+    border: rgb(141, 134, 134) solid 1px;
+    border-radius: 20px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #bfcdcc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.toggleColor{
+    background-color: rgb(111, 188, 221);
+    border-radius: 10px;
+}
+
+.songsSection{
+    display: flex;
+}
+
+#songslist{
+    width: 25%;
+    padding: 40px 10px;
+}
+
+#songslist label, select, h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.margin-class{
+    padding-top: 40px;
+}
+
+#card{
+    width: 35%;
+    margin-left: 20px;
+}
+
+#cardsong{
+    background-color: rgb(40, 77, 208);
+    width: 80%;
+    margin: 10px auto;
+    padding-top: 10px;
+    border-radius: 30px;
+    border-top: outset 1px rgb(140, 31, 195);
+    border-left: outset 1px rgb(140, 31, 195);
+    text-align: center;
+}
+
+#artistimage{
+  height: 250px;
+  width: 250px;
+}
+
+#buttoncontrols span{
+    margin: 20px 35%;
+}
+
+#buttoncontrols span button, #displaylist button{
+    background-color: rgb(162, 48, 162);
+    width: 15%;
+    height: 50px;
+}
+
+.buttonstyle{
+  height: 50px;
+  width: 70%;
+  color: white;
+  background-color: #09528e;
+  border: none;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+#displaylist{
+    width: 30%;
+    margin-left: 20px;
+}
+
+#displaylist input{
+    background-color: rgb(200, 203, 205);
+    height: 50px;
+    width: 70%;
+    font-size: 25px;
+}
+
+.styleNone{
+  list-style-type: none;
+}
